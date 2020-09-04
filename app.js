@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function click(square){
         let currentId = square.id
         if (isGameOver) return
-        if (square.classList.contains('checked') || square.classList.contains('flag')) return
+        if (square.classList.contains('checked') || square.classList.contains('flagged')) return
         if (square.classList.contains('bomb')) {
             gameOver(square)
         }
