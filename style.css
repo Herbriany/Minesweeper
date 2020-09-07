@@ -1,6 +1,6 @@
 .grid {
-    height: 400px;
-    width: 400px;
+    /* height: 484px;
+    width: 484px; */
     display: flex;
     flex-wrap: wrap;
     background-color: grey;
@@ -14,6 +14,10 @@
 .checked {
     background-color: red;
     
+}
+
+form {
+    margin: 10px
 }
 
 /* .bomb{
