@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let bombAmount = parseInt(document.getElementById('mineAmount').value)
         let width = parseInt(document.getElementById('gridSize').value)
 
-        if ((width > 0 && bombAmount > 0 ) && ((width*width) > bombAmount))  {
+        if ((width > 0 && bombAmount > 0 ) && ((width*width) > bombAmount) && (width <= 30)) {
 
             e.preventDefault()
             var squares = []
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             createBoard(bombAmount, width)
         }
         else {
-            alert('Must have a positive numbers for both Bomb Amount and Grid Size. Bomb amount can not be bigger than the amount of squares on the grid.')
+            alert('Must have a positive numbers for both Bomb Amount and Grid Size. Bomb amount can not be bigger than the amount of squares on the grid. Max grid size is 30')
         }
         
         function createBoard(bombAmount, width) {
